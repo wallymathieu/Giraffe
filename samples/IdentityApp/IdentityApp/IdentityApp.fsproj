@@ -23,6 +23,14 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.*" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.0.*" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.*" />
+    <PackageReference Include="System.Diagnostics.Tracing" Version="4.3.*" />
+    <PackageReference Include="System.IO" Version="4.3.*" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.*" />
+    <PackageReference Include="System.Threading" Version="4.3.*" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.*" />
+    <PackageReference Include="System.Collections" Version="4.3.*" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.*" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.*" />
   </ItemGroup>
 
   <ItemGroup>

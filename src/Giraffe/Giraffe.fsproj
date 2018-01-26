@@ -7,7 +7,6 @@
     <Copyright>Copyright 2017 Dustin Moris Gorski</Copyright>
     <NeutralLanguage>en-GB</NeutralLanguage>
     <Authors>Dustin Moris Gorski and contributors</Authors>
-    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <DebugType>portable</DebugType>
     <WarningsAsErrors>1</WarningsAsErrors>
     <Optimize>True</Optimize>
@@ -23,6 +22,10 @@
     <RepositoryUrl>https://github.com/dustinmoris/giraffe</RepositoryUrl>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <IsWindows Condition="'$(OS)' == 'Windows_NT'">true</IsWindows>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworks Condition="'$(IsWindows)' != 'true'">netstandard2.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(IsWindows)' == 'true'">net461;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
